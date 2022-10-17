@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  aw-db:
+    container_name: "aw-db-instance" 
+    image: aw-db
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./db-data:/srv/db-data
